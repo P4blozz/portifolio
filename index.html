@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pablo — Portfólio</title>
+  <meta name="description" content="Portfólio profissional de Pablo: projetos, experiência e contato." />
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+</head>
+<body>
+  <a href="#inicio" class="skip-link">Ir para conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <!-- Sprite de ícones SVG -->
+  <svg width="0" height="0" class="hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/><path d="m22 8-10 6L2 8"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.72 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 2.87-.39c.97 0 1.95.13 2.87.39 2.18-1.49 3.14-1.18 3.14-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.45-2.69 5.42-5.25 5.71.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm7.5 0H15v1.71h.06c.51-.96 1.78-1.97 3.66-1.97 3.92 0 4.64 2.58 4.64 5.94V21h-4v-5.2c0-1.24-.02-2.83-1.73-2.83-1.74 0-2.01 1.36-2.01 2.73V21h-4V9Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07 6.07-1.42-1.42M7.35 8.47 5.93 7.05m0 9.9 1.42-1.42m8.3-8.3 1.42-1.42"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 0 0 12 21a9 9 0 0 0 9-8.21Z"/></symbol>
+    <!-- Ícones Stack & Pipeline -->
+    <symbol id="i-ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="12" r="3"/>
+      <circle cx="17" cy="12" r="3"/>
+      <path d="M10 12h4"/>
+    </symbol>
+    <symbol id="i-test" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 4h10M9 4v6l-3 5a6 6 0 0 0 12 0l-3-5V4"/>
+      <path d="m9 18 2-2 2 2 2-2"/>
+    </symbol>
+    <symbol id="i-lint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m3 21 6-6 4 4-6 6H3v-4Z"/>
+      <path d="M14 7 7 14"/>
+      <path d="M18 3l3 3-8 8-3-3 8-8Z"/>
+    </symbol>
+    <symbol id="i-deploy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"/>
+    </symbol>
+  </svg>
+  <header class="site-header">
+    <div class="brand">pablo<span class="dot">.</span>dev<span class="dot">.</span>br</div>
+    <nav class="main-nav" aria-label="Principal">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Menu" title="Abrir menu">☰</button>
+      <ul class="nav-list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato" class="cta-link">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema" data-icon="moon">
+      <svg width="18" height="18" aria-hidden="true"><use href="#i-moon"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" data-observe>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-text reveal">
+        <h1>
+          <span class="hi">Olá, eu sou</span><br>
+          <span class="name">Pablo</span><br>
+          <span class="role" id="roleRotate" data-roles='["Desenvolvedor Front-end","UI Engineer","Performance Advocate","A11y Focused"]'>Desenvolvedor</span>
+        </h1>
+        <p class="tagline">Crio experiências digitais rápidas, acessíveis e com foco em valor real para o usuário e produto.</p>
+        <div class="quick-actions">
+          <a href="#projetos" class="btn primary"><svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg> Ver Projetos</a>
+          <a href="#contato" class="btn ghost">Contato</a>
+        </div>
+        <ul class="social-inline" aria-label="Redes sociais">
+          <li><a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" role="img"><use href="#i-github"/></svg></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" role="img"><use href="#i-linkedin"/></svg></a></li>
+          <li><a href="mailto:seuemail@exemplo.com" aria-label="E-mail"><svg width="18" height="18" role="img"><use href="#i-mail"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame parallax" data-depth="0.15">
+          <img src="./assets/img/profile.jpg" alt="Foto de Pablo" loading="lazy" />
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section id="stack" class="section compact" data-observe>
+      <h2 class="reveal">Stack & Pipeline</h2>
+      <p class="lead reveal delay-1">Linha com ferramentas e pequenas notas do meu fluxo de entrega.</p>
+      <div class="stackline reveal delay-2" role="list" aria-label="Stack e pipeline">
+        <div class="chip" role="listitem">
+          <span class="chip-icon" aria-hidden="true"><svg width="14" height="14"><use href="#i-ci"/></svg></span>
+          CI/CD <small>(GitHub Actions)</small>
+        </div>
+        <div class="chip" role="listitem">
+          <span class="chip-icon" aria-hidden="true"><svg width="14" height="14"><use href="#i-test"/></svg></span>
+          Testes <small>(Vitest)</small>
+        </div>
+        <div class="chip" role="listitem">
+          <span class="chip-icon" aria-hidden="true"><svg width="14" height="14"><use href="#i-lint"/></svg></span>
+          Lint/Format <small>(ESLint + Prettier)</small>
+        </div>
+        <div class="chip" role="listitem">
+          <span class="chip-icon" aria-hidden="true"><svg width="14" height="14"><use href="#i-deploy"/></svg></span>
+          Deploy <small>(Vercel/Netlify)</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section compact" data-observe>
+      <h2 class="reveal">Sobre</h2>
+      <p class="lead reveal delay-1">Resumo diretíssimo: em uma frase indique seu diferencial principal. Em 2–3 frases explique foco de atuação, tecnologias-chave e valor que entrega.</p>
+      <div class="info-grid">
+        <div class="reveal">
+          <h3>Foco</h3>
+          <p>Ex: Front-end performático, acessível e modular.</p>
+        </div>
+        <div class="reveal delay-1">
+          <h3>Valor</h3>
+          <p>Ex: Transformo requisitos nebulosos em interfaces claras.</p>
+        </div>
+        <div class="reveal delay-2">
+          <h3>Atual</h3>
+          <p>Ex: Desenvolvedor na Empresa X ou Freelancer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section compact" data-observe>
+      <h2 class="reveal">Experiência</h2>
+      <ol class="timeline" aria-label="Linha do tempo de experiência">
+        <li class="timeline-item reveal">
+          <div class="ti-marker"></div>
+          <div class="ti-content">
+            <header>
+              <h3>Empresa X <span class="pill small">2024–Atual</span></h3>
+              <p class="role-line">Front-end Engineer • Foco em design system e performance</p>
+            </header>
+            <p class="mini">Resultados: -30% TTFB, +18% conversão mobile.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal delay-1">
+          <div class="ti-marker"></div>
+          <div class="ti-content">
+            <header>
+              <h3>Startup Y <span class="pill small">2022–2024</span></h3>
+              <p class="role-line">UI Dev • Escalabilidade de componentes</p>
+            </header>
+            <p class="mini">Implantei CI acessibilidade + redução de bundle em 40%.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal delay-2">
+          <div class="ti-marker"></div>
+          <div class="ti-content">
+            <header>
+              <h3>Freelancer <span class="pill small">2019–2022</span></h3>
+              <p class="role-line">Projetos variados</p>
+            </header>
+            <p class="mini">Landing pages otimizadas com Lighthouse 95+.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="section compact" data-observe>
+      <h2 class="reveal">Skills</h2>
+      <p class="lead reveal delay-1">Stack visual com ícones — adicione suas imagens em <code>assets/img/skills</code>.</p>
+      <div class="skills-grid" role="list" aria-label="Skills principais">
+        <div class="skill-card reveal" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/js.svg" alt="JavaScript" loading="lazy"></div>
+          <span class="skill-label">JavaScript</span>
+        </div>
+        <div class="skill-card reveal delay-1" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/bootstrap.svg" alt="Bootstrap" loading="lazy"></div>
+          <span class="skill-label">Bootstrap</span>
+        </div>
+        <div class="skill-card reveal delay-2" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/html5.svg" alt="HTML5" loading="lazy"></div>
+          <span class="skill-label">HTML5</span>
+        </div>
+        <div class="skill-card reveal" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/css3.svg" alt="CSS3" loading="lazy"></div>
+          <span class="skill-label">CSS3</span>
+        </div>
+        <div class="skill-card reveal delay-1" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/vscode.svg" alt="VS Code" loading="lazy"></div>
+          <span class="skill-label">VS Code</span>
+        </div>
+        <div class="skill-card reveal delay-2" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/github.svg" alt="GitHub" loading="lazy"></div>
+          <span class="skill-label">GitHub</span>
+        </div>
+        <div class="skill-card reveal" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/csharp.svg" alt="C#" loading="lazy"></div>
+          <span class="skill-label">C#</span>
+        </div>
+        <div class="skill-card reveal delay-1" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/git.svg" alt="Git" loading="lazy"></div>
+          <span class="skill-label">Git</span>
+        </div>
+        <div class="skill-card reveal delay-2" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/nodejs.svg" alt="Node.js" loading="lazy"></div>
+          <span class="skill-label">Node.js</span>
+        </div>
+        <div class="skill-card reveal" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/dotnet.svg" alt=".NET" loading="lazy"></div>
+          <span class="skill-label">.NET</span>
+        </div>
+        <div class="skill-card reveal delay-1" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/postgres.svg" alt="PostgreSQL" loading="lazy"></div>
+          <span class="skill-label">PostgreSQL</span>
+        </div>
+        <div class="skill-card reveal delay-2" role="listitem">
+          <div class="skill-icon"><img src="./assets/img/skills/mysql.svg" alt="MySQL" loading="lazy"></div>
+          <span class="skill-label">MySQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section compact" data-observe>
+      <h2 class="reveal">Projetos Selecionados</h2>
+      <div class="project-filters reveal delay-1" role="toolbar" aria-label="Filtrar projetos">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="node">Node</button>
+        <button class="filter-btn" data-filter="performance">Perf</button>
+        <button class="filter-btn" data-filter="devops">DevOps</button>
+      </div>
+      <div class="projects-grid" aria-label="Lista de projetos">
+        <article class="project-card reveal" data-tags="react,api,ci" tabindex="0">
+          <div class="project-head">
+            <h3>Projeto 1</h3>
+            <span class="pill">2025</span>
+          </div>
+            <p class="project-desc">Resumo enxuto (máx 2 linhas) focado em impacto e resultado objetivo.</p>
+            <ul class="stack">
+              <li>React</li><li>API</li><li>CI/CD</li>
+            </ul>
+            <div class="actions">
+              <a href="#" class="text-link" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#i-external"/></svg> Demo</a>
+              <a href="#" class="text-link" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+            </div>
+        </article>
+        <article class="project-card reveal delay-1" data-tags="node,graphql,devops" tabindex="0">
+          <div class="project-head">
+            <h3>Projeto 2</h3>
+            <span class="pill">2025</span>
+          </div>
+            <p class="project-desc">Resumo enxuto focado em objetivo mensurável.</p>
+            <ul class="stack">
+              <li>Node</li><li>GraphQL</li><li>Docker</li>
+            </ul>
+            <div class="actions">
+              <a href="#" class="text-link" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#i-external"/></svg> Demo</a>
+              <a href="#" class="text-link" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+            </div>
+        </article>
+        <article class="project-card reveal delay-2" data-tags="typescript,edge,performance" tabindex="0">
+          <div class="project-head">
+            <h3>Projeto 3</h3>
+            <span class="pill">2024</span>
+          </div>
+            <p class="project-desc">Resumo breve focado em impacto.</p>
+            <ul class="stack">
+              <li>TypeScript</li><li>Edge</li><li>Vitest</li>
+            </ul>
+            <div class="actions">
+              <a href="#" class="text-link" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#i-external"/></svg> Demo</a>
+              <a href="#" class="text-link" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+            </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section compact" data-observe>
+      <h2 class="reveal">Contato</h2>
+      <div class="contact-wrap">
+        <div class="contact-intro">
+          <p class="lead reveal delay-1">Aberto para conversar sobre oportunidades, projetos e colaborações.</p>
+          <div class="badges reveal delay-2">
+            <span class="badge avail">Disponível</span>
+            <span class="badge time">Resposta em ~24h</span>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-item reveal" href="mailto:seuemail@exemplo.com" data-copy="seuemail@exemplo.com" aria-label="Enviar e copiar e-mail">
+            <span class="ci-icon"><svg width="16" height="16" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span class="ci-text">
+              <strong>E-mail</strong>
+              <small>seuemail@exemplo.com</small>
+            </span>
+            <span class="ci-cta">Copiar</span>
+          </a>
+          <a class="contact-item reveal delay-1" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <span class="ci-icon"><svg width="16" height="16" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+            <span class="ci-text">
+              <strong>LinkedIn</strong>
+              <small>/seu-perfil</small>
+            </span>
+            <span class="ci-cta">Abrir</span>
+          </a>
+          <a class="contact-item reveal delay-2" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+            <span class="ci-icon"><svg width="16" height="16" aria-hidden="true"><use href="#i-github"/></svg></span>
+            <span class="ci-text">
+              <strong>GitHub</strong>
+              <small>/seu-usuario</small>
+            </span>
+            <span class="ci-cta">Abrir</span>
+          </a>
+          <a class="contact-item reveal delay-3" href="./assets/docs/CV.pdf" aria-label="Baixar CV">
+            <span class="ci-icon"><svg width="16" height="16" aria-hidden="true"><use href="#i-external"/></svg></span>
+            <span class="ci-text">
+              <strong>CV</strong>
+              <small>PDF • atualizado</small>
+            </span>
+            <span class="ci-cta">Baixar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Pablo. Crafted com foco em performance & acessibilidade.</p>
+    <ul class="social-footer" aria-label="Redes sociais">
+      <li><a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+      <li><a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+      <li><a href="mailto:seuemail@exemplo.com" aria-label="E-mail"><svg width="16" height="16" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+    </ul>
+  </footer>
+
+  <!-- Toast de feedback -->
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>
